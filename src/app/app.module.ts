@@ -7,7 +7,7 @@ import { FileuploaderComponent } from './fileuploader/fileuploader.component';
 import { HeaderComponent } from './header/header.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { from } from 'rxjs';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
